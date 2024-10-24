@@ -1,10 +1,8 @@
 # Preliminary data inspection functions
-
 import pandas as pd
 import numpy as np
 
-
-
+# 1. Display Data Overview Function
 def display_data_overview(df, name='DataFrame'):
     print(f"--- {name} Head ---")
     display(df.head())
