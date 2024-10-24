@@ -1,0 +1,14 @@
+name: titanic_project
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9                # You can adjust the version to your preference
+  - pandas                    # Data manipulation
+  - numpy                     # Numerical operations
+  - matplotlib                # Data visualization
+  - seaborn                   # Statistical data visualization
+  - wordcloud                 # For generating word clouds
+  - scikit-learn              # Machine learning library
+  - pathlib                   # File system paths (usually comes with Python)
+  - pip                       # For installing packages not available in conda
