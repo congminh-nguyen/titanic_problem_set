@@ -4,6 +4,13 @@ import numpy as np
 
 # 1. Display Data Overview Function
 def display_data_overview(df, name='DataFrame'):
+    """
+    Display the head, info, and descriptive statistics of a DataFrame.
+    Parameters:
+    -----------
+    df (pandas.DataFrame): The DataFrame to display.
+    name (str): The name of the DataFrame.
+    """
     print(f"--- {name} Head ---")
     display(df.head())
     print(f"\n--- {name} Info ---")
@@ -14,6 +21,13 @@ def display_data_overview(df, name='DataFrame'):
 
 # 2. Missing Data Analysis Function
 def analyse_missing_data(df, name='DataFrame'):
+    """
+    Analyse the missing data in a DataFrame.
+    Parameters:
+    -----------
+    df (pandas.DataFrame): The DataFrame to analyse.
+    name (str): The name of the DataFrame.
+    """
     total = df.isnull().sum()
     percent = (df.isnull().sum() / df.isnull().count() * 100)
     types = df.dtypes.astype(str)
@@ -30,6 +44,13 @@ def analyse_missing_data(df, name='DataFrame'):
 
 # 3. Most Frequent Data Function
 def most_frequent_data(df, name='DataFrame'):
+    """
+    Analyse the most frequent data in a DataFrame.
+    Parameters:
+    -----------
+    df (pandas.DataFrame): The DataFrame to analyse.
+    name (str): The name of the DataFrame.
+    """
     total = df.count()
     most_freq_item = []
     frequency = []
@@ -61,6 +82,13 @@ def most_frequent_data(df, name='DataFrame'):
 
 # 4. Unique Values Analysis Function
 def analyse_unique_values(df, name='DataFrame'):
+    """
+    Analyse the unique values in a DataFrame.
+    Parameters:
+    -----------
+    df (pandas.DataFrame): The DataFrame to analyse.
+    name (str): The name of the DataFrame.
+    """
     total = df.count()
     uniques = df.nunique()
     unique_df = pd.DataFrame({
