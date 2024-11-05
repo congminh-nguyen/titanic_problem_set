@@ -12,3 +12,5 @@ dependencies:
   - scikit-learn              # Machine learning library
   - pathlib                   # File system paths (usually comes with Python)
   - pip                       # For installing packages not available in conda
+  - altair                    # Declarative statistical visualization library
+  - jupyter                   # Interactive computing
